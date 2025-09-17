@@ -39,7 +39,7 @@ export function Home() {
               <Heart className="h-5 w-5 text-red-500" />
             </div>
             <div>
-              <h1>MindWell</h1>
+              <h1>WellMind</h1>
               <p className="text-muted-foreground">Welcome back, {user?.name}</p>
             </div>
           </div>
