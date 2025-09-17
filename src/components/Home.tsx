@@ -32,12 +32,12 @@ export function Home() {
       <div className="bg-white shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <div className="flex items-center space-x-2">
-              <div className="p-2 bg-primary rounded-full">
-                <Brain className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <Heart className="h-5 w-5 text-red-500" />
-            </div>
+            <img 
+                 src="/logo.jpg" 
+                 alt="WellMind Logo" 
+                 className="h-10 w-10 rounded-full object-cover"
+            />
+  
             <div>
               <h1>WellMind</h1>
               <p className="text-muted-foreground">Welcome back, {user?.name}</p>
