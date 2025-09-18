@@ -5,6 +5,7 @@ import { Input } from './ui/input';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Heart, Brain } from 'lucide-react';
+import { Logo } from "./Logo";
 
 export function Login() {
   const context = useContext(AppContext);
@@ -57,14 +58,9 @@ export function Login() {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
-            <div className="flex items-center space-x-2">
-              <div className="p-2 bg-primary rounded-full">
-                <Brain className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <Heart className="h-6 w-6 text-red-500" />
-            </div>
+            <Logo size="h-16 w-16" />
           </div>
-          <CardTitle>MindWell</CardTitle>
+          <CardTitle>WellMind</CardTitle>
           <p className="text-muted-foreground">Your mental health companion</p>
         </CardHeader>
         <CardContent>

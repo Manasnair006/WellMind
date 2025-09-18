@@ -4,6 +4,7 @@ import { AppContext } from '../App';
 import { Button } from './ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import { Brain, Heart, TrendingUp, BookOpen, Phone, LogOut } from 'lucide-react';
+import Logo from "./Logo"; 
 
 export function Home() {
   const context = useContext(AppContext);
@@ -32,12 +33,8 @@ export function Home() {
       <div className="bg-white shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <div className="flex items-center space-x-2">
-              <div className="p-2 bg-primary rounded-full">
-                <Brain className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <Heart className="h-5 w-5 text-red-500" />
-            </div>
+            {/* Logo */}
+            <Logo size="h-10 w-10" />
             <div>
               <h1>WellMind</h1>
               <p className="text-muted-foreground">Welcome back, {user?.name}</p>
