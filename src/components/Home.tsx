@@ -4,7 +4,8 @@ import { AppContext } from '../App';
 import { Button } from './ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import { Brain, Heart, TrendingUp, BookOpen, Phone, LogOut } from 'lucide-react';
-import Logo from "./Logo"; 
+import { Logo } from "./Logo"; // ✅ matches your Logo.tsx export
+
 
 export function Home() {
   const context = useContext(AppContext);
